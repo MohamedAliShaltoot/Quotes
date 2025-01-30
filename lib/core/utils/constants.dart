@@ -9,7 +9,8 @@ class Constants {
       {required BuildContext context, required String msg}) {
     showDialog(
         context: context,
-        builder: (context) => CupertinoAlertDialog(
+        builder: (context) =>
+            CupertinoAlertDialog(
               title: Text(msg),
               actions: [
                 TextButton(
@@ -22,7 +23,7 @@ class Constants {
   }
 
   static showToast(
-      {required BuildContext context, required String msg,Color? color,ToastGravity? gravity}
+      { required String msg,Color? color,ToastGravity? gravity}
       ){
     Fluttertoast.showToast(
       toastLength: Toast.LENGTH_LONG,
