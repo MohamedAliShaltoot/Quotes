@@ -4,7 +4,7 @@ import 'package:quotes/app.dart';
 import 'app.dart';
 
 void main() {
-  runApp(const QouteApp() );
+  runApp(const QuoteApp() );
 }
 
 

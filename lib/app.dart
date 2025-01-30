@@ -1,21 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:quotes/config/themes/app_theme.dart';
+import 'package:quotes/core/utils/app_strings.dart';
 
 import 'features/random_quote/presentation/Screens/qoute_screen.dart';
 
-class QouteApp extends StatelessWidget {
-  const QouteApp({super.key});
-
+class QuoteApp extends StatelessWidget {
+  const QuoteApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-       
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-home: QouteScreen(),
+      title: AppStrings.appName,
+      debugShowCheckedModeBanner: false,
+      theme: appTheme(),
+      home: QuoteScreen(),
     );
   }
 }
